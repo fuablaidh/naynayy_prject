@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    background-color: #ff7eb9; 
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.navbar .logo :hover {
+    cursor: pointer;
+    transform: scale(1.345);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    
+    cursor: pointer;
+    font-size: 18px;
+   
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#home, #about, #services, #contact {
+    background-color: #ffd1dc; 
+}
+
+.section h1, .section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+#services ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#contact .p :hover {
+    color: rgb(0, 213, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
